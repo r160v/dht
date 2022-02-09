@@ -30,7 +30,7 @@ The application can be executed using the command “java dht.MainUI” after ex
 # User interface
 
 The tables are updated automatically when values are inserted or removed. Values are shown in ascending order, regardless of insertion order. The application has been tested
-in MacOS and Ubuntu, being the graphical interface different, as shown below:
+on MacOS and Ubuntu, being the graphical interface different, as shown below:
 
 - MacOS
 
