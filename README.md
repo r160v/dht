@@ -20,8 +20,10 @@ The referenced libraries are the ones from ZooKeeper (apache-zookeeper-x.x.x-bin
 The application can be executed using the command “java dht.MainUI” after exporting the JAR file. The following nuances should be taken into account:
 
 - Execution without arguments
+
   By default, the connection to ZooKeeper is configured using the loopback address 127.0.0.1 and port 2181. It’s not possible to access the “Configuration” tab.
 - Execution with one argument (any value)
+
   When the application starts, it shows the “Configuration” tab, the “Operations” tab will remain disabled until the “Start DHT” button is clicked. In the “Configuration” tab, the text field is used to configure the servers that make up the ZooKeeper ensemble. The format is "IP1:Port1;IP2:Port2" (separated by semicolons). Each DHT server will connect to a random ZooKeeper server.
 
 # User interface
