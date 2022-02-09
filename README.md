@@ -22,7 +22,7 @@ The application can be executed using the command “java dht.MainUI” after ex
 - Execution without arguments
   By default, the connection to ZooKeeper is configured using the loopback address 127.0.0.1 and port 2181. It’s not possible to access the “Configuration” tab.
 - Execution with one argument (any value)
-  When the application starts, it shows the “Configuration” tab, the “Operations” tab will remain disabled until the “Start DHT” button is clicked. In the “Configuration” tab, the text field is used to configure the servers that make up the ZooKeeper ensemble. The format is <IP1>:<Port1>;<IP2>:<Port2> (separated by semicolons). Each DHT server will connect to a random ZooKeeper server.
+  When the application starts, it shows the “Configuration” tab, the “Operations” tab will remain disabled until the “Start DHT” button is clicked. In the “Configuration” tab, the text field is used to configure the servers that make up the ZooKeeper ensemble. The format is "<IP1>:<Port1>;<IP2>:<Port2>" (separated by semicolons). Each DHT server will connect to a random ZooKeeper server.
 
 # User interface
 
@@ -31,10 +31,10 @@ in MacOS and Ubuntu, being the graphical interface different, as shown below:
 
 - MacOS
 
-<img src=“images/macos.png”>
+<img src="images/macos.png">
 
 - Ubuntu
 
-<img src=“images/ubuntu.png”>
+<img src="images/ubuntu.png">
 
 “Local server” shows the name of the local server, which in this case is the name of the child znodes of “/members” in ZooKeeper. Inside the bracket, the first number indicates the position of the server within the list of servers, and the second number shows the number of servers that make up the DHT at any given time.
